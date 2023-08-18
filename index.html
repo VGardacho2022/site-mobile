@@ -4,48 +4,204 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site lan house para mobile</title>
-    <link rel=”stylesheet” href=”reset.css”>
-    <link rel="stylesheet" href="style.css">
+    <title>VGLanHouse</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <header class="cabeçalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabeçalho__menu-hamburguer container__imagem"></span>
             </label>
             <ul class="lista-menu">
                 <li class="lista-menu__titulo">Categorias</li>
                 <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Jogos</a>
+                </li>
+                <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Assinatura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Horários</a>
                 </li>
                 <li class="lista-menu__item">
                     <a href="#" class="lista-menu__link">Campeonatos</a>
                 </li>
                 <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Cartões da Loja</a>
-                </li>
-                <li class="lista-menu__item">
-                    <a href="#" class="lista-menu__link">Minha Conta</a>
+                    <a href="#" class="lista-menu__link">Contato</a>
                 </li>
             </ul>
-            <img src="images/Logo.svg" alt="Logo da Lan" class="container__imagem">
+            
+            <h1 class="container__titulo"><b class="container__titulo--negrito">VG</b>Lan House</h1>
         </div>
+
         <div class="container">
-            <a href="#"><img src="images/Favoritos.svg" alt="Jogos favoritos" class="container__imagem"></a>
-            <a href="#"><img src="images/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#" class="container__link">
+                <img src="img/Favoritos.svg" alt="Carrinhos de compras" class="container__imagem">
+                <p class="container__texto">Meus Favoritos</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu perfil</p>
+            </a>
         </div>
     </header>
     <section class="banner">
-        <h2 class="banner__titulo">O que você está procurando?</h2>
-        <p class="banner__texto">Encontre aqui o que ofertamos em nossa lan house?</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual é o proximo jogo que irá jogar?">
+        <h2 class="banner__titulo">O que vamos ver?</h2>
+        <p class="banner__texto">Encontre aqui o que ofertamos!</p>
+        <input type="search" class="banner__pesquisa" placeholder="Qual será o proximo jogo?">
     </section>
     <section class="carrossel">
-        <h2 class="carrossel__titulo">Mais Jogados</h2>
+        <h2 class="carrossel__titulo">Jogos Bons Pouco Conhecidos</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/genshin.jpg"
+                            alt="Genshin Impact"></div>
+                    <div class="swiper-slide"><img src="img/Halo_Guardians.png"
+                            alt="Halo Guardians"></div>
+                    <div class="swiper-slide"><img src="img/apex.jpeg"
+                            alt="Apex Legends"></div>
+                    <div class="swiper-slide"><img src="img/elder.jpeg" alt="Elder Ring"></div>
+                    <div class="swiper-slide"><img src="img/zelda.jpeg" alt="The Legend of Zelda"></div>
+                    <div class="swiper-slide"><img src="img/rocket.jpeg" alt="Rocket League"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+                        <h2 class="descrição__titulo-livro">Mortal Kombat 11</h2>
+                        <p class="descrição__texto">Escolha seu personagem e lute bravamente contra os adversários.</p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/mortalkombat11.jpeg" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel__titulo">Mais Jogados</h2>
+        <!-- Slider main container -->
+        <div class="carrossel__container">
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/quadrado.png"
+                            alt="Minecraft"></div>
+                    <div class="swiper-slide"><img src="img/resident.jpeg"
+                            alt="Resident Evil 4"></div>
+                    <div class="swiper-slide"><img src="img/godofwar.jpeg"
+                            alt="God of War"></div>
+                    <div class="swiper-slide"><img src="img/gtav.jpeg" alt="Grand Theaf Auto V"></div>
+                    <div class="swiper-slide"><img src="img/rdrII.jpeg" alt="Read Dead Redempition II"></div>
+                    <div class="swiper-slide"><img src="img/cod.jpeg" alt="Call of Duty"></div>
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+
+            <div class="card">
+                <!-- 1º linha -->
+                <div class="card__descrição">
+                    <!-- 1º coluna -->
+                    <div class="descrição">
+                        <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+                        <h3 class="descrição__titulo">Jogo Destaque</h3>
+                        <h2 class="descrição__titulo-livro">Minecraft</h2>
+                        <p class="descrição__texto">Desbrave misterios em um mundo quadrado.
+                        </p>
+                    </div>
+                    <!-- 2º coluna -->
+                    <img src="img/minecraft.png" class="descrição__imagem">
+                </div>
+
+                <!-- 2º linha -->
+                <div class="card__botões">
+                    <!-- 1º coluna -->
+                    <ul class="botões">
+                        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro"></li>
+                        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras"></li>
+                    </ul>
+                    <!-- 2º coluna -->
+                    <a href="#" class="botões__ancora">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+    <section class="contato">
+        <div class="contato__descrição">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Novos jogos adicionados a galeria, eventos, entre muito outros.</p>
+        </div>
+        <input type="email" placeholder="Cadastre seu e-mail" class="contato__email">
+    </section>
+
+    <hr />
+
+    <footer class="rodapé">
+        <img src="img/vglan.png" alt="logo">
+        <ul class="lista-rodapé">
+            
+        </ul>
+
+
+        </ul>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 3,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+        });
+    </script>
 </body>
 
 </html>
