@@ -1,0 +1,55 @@
+header{
+    background-color: #b41010;
+    color: white;
+}
+
+.cabecalho-imagem{
+    width: 20%;
+}
+
+.cabecalho {
+    background-color: #b41010;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.cabecalho-lista-item{
+    display: inline-block;
+    margin: 0 16px;
+    font-size: 24px;
+}
+
+.titulo{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.imagem{
+    background-image: linear-gradient(#b41010,white);
+}
+
+.perfil{
+    align-items: center;
+    width: 20%;
+    padding: 0px 0px 0px 550px;
+}
+
+.descricao{
+    font-size: large;
+    text-align: center;
+}
+
+.rodape{
+    background-color: white;
+    text-align: center;
+
+}
+
